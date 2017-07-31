@@ -73,9 +73,8 @@ EXPOSE 8080
 
 ```bash
 sudo docker build -t dev:echo-server .
-
-sudo docker run -v $(pwd):/usr/src/app/ -w /usr/src/app/ dev:echo-server npm install
-sudo docker run -v $(pwd):/usr/src/app/ -w /usr/src/app/ -p 8080:8080 dev:echo-server npm run echo
+ 
+sudo docker run -v $(pwd):/usr/src/app/ -w /usr/src/app/ -p 8080:8080 dev:echo-server npm install && npm run echo
 ```
 
 [Результат](http://localhost:8080/echo?%27%27=%D0%9E%D0%BD%20%D1%81%D0%BA%D0%B0%D0%B7%D0%B0%D0%BB:%20%C2%AB%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8!&%27%27=%D0%9E%D0%BD%20%D0%B2%D0%B7%D0%BC%D0%B0%D1%85%D0%BD%D1%83%D0%BB%20%D1%80%D1%83%D0%BA%D0%BE%D0%B9.&%27%27=%D0%A1%D0%BB%D0%BE%D0%B2%D0%BD%D0%BE%20%D0%B2%D0%B4%D0%BE%D0%BB%D1%8C%20%D0%BF%D0%BE%20%D0%9F%D0%B8%D1%82%D0%B5%D1%80%D1%81%D0%BA%D0%BE%D0%B9,%20%D0%9F%D0%B8%D1%82%D0%B5%D1%80%D1%81%D0%BA%D0%BE%D0%B9,&%27%27=%D0%9F%D1%80%D0%BE%D0%BD%D1%91%D1%81%D1%81%D1%8F%20%D0%BD%D0%B0%D0%B4%20%D0%97%D0%B5%D0%BC%D0%BB%D1%91%D0%B9%E2%80%A6)
