@@ -110,7 +110,21 @@ sudo docker run -p 3000:8080 dev:echo-server
 
 ## #4 Публикация докера на Docker Hub
 
+Сохранить образ можно на DockerHub командами:
+```bash
+sudo docker tag image username/repository:tag
 
+sudo docker tag dev:echo-server dockerpack/echo-server:alpine
+sudo docker push dockerpack/echo-server:alpine
+```
+
+![alt text](http://upload.p97test.fozzytest.ru/img/597ecef8006b3.png)
+![alt text](http://upload.p97test.fozzytest.ru/img/597ecfb47c121.png)
+![alt text](http://upload.p97test.fozzytest.ru/img/597ed09377602.png)
+
+[Репозиторий dockerpack](https://hub.docker.com/search/?isAutomated=0&isOfficial=0&page=1&pullCount=0&q=dockerpack&starCount=0)
+
+[Документация](https://docs.docker.com/get-started/part2/#share-your-image)
 
 ## Справка
 ###### Просмотреть образы
