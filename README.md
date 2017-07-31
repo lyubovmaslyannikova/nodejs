@@ -21,8 +21,7 @@ Docker - готовый продукт для использования. Бла
 На dockerHub есть готовый образ [node:alpine](https://hub.docker.com/_/node/), в котором уже установлен node.js на ОС [Alpine Linux](https://ru.wikipedia.org/wiki/Alpine_Linux). [Dockerfile](https://github.com/nodejs/docker-node/blob/f547c4c7281027d5d90f4665815140126e1f70d5/8.2/alpine/Dockerfile) образа можно посмотреть на github. То есть, для запуска своего приложения на node.js мы можем не писать свой Dockerfile, не устанавливать локально node.js-сервер, а просто взять и запустить этот образ командами:
 
 ```bash
-sudo docker run -v $(pwd):/usr/src/app/ -w /usr/src/app/ node:alpine npm install
-sudo docker run -v $(pwd):/usr/src/app/ -w /usr/src/app/ -p 8080:8080 node:alpine node server.js
+sudo docker run -v $(pwd):/usr/src/app/ -w /usr/src/app/ -p 8080:8080 node:alpine npm install && node server.js
 ```
 + -v $(pwd):/usr/src/app/ - текущую директорию $(pwd) примонтировать в /usr/src/app/ контейнера.
 + -w /usr/src/app/ - /usr/src/app/ указать рабочей директорией. Все команды буду выполняться относительно рабочего каталога.
