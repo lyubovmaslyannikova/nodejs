@@ -1,9 +1,9 @@
 'use strict';
 
 const express = require('express'),
-	  bodyParser = require('body-parser'),
-	  app = express(),
-	  port = process.env.PORT || 8080;
+      bodyParser = require('body-parser'),
+      app = express(),
+      port = process.env.PORT || 8080;
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
