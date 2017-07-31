@@ -1,0 +1,18 @@
+{
+  "name": "echoserver",
+  "version": "1.0.0",
+  "description": "RESTful Echo Server. Returns URL parameters",
+  "main": "server.js",
+  "scripts": {
+    "echo": "node server.js"
+  },
+  "keywords": [
+    "echo",
+    "server"
+  ],
+  "author": "Fozzy Inc.",
+  "dependencies": {
+    "express": "^4.15.3",
+    "body-parser": "^1.17.2"
+  }
+}
