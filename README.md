@@ -106,7 +106,7 @@ COPY скопировала файл app/package.json, в котором опи�
 sudo docker run -p 3000:8080 dev:echo-server
 ```
 Теперь сервер доступен по 3000 порту:
-[http://localhost:3000/echo?domain=fozzy.com&Creation%20Date=1996-04-27T04:00:00Z&Admin%20Email=partners@fozzy.com] (http://localhost:3000/echo)
+[http://localhost:3000/echo](http://localhost:3000/echo?domain=fozzy.com&Creation%20Date=1996-04-27T04:00:00Z&Admin%20Email=partners@fozzy.com)
 
 # #4 Публикация докера на Docker Hub
 
