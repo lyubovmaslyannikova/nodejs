@@ -36,7 +36,7 @@ sudo docker run -v $(pwd):/usr/src/app/ -w /usr/src/app/ -p 8080:8080 node:alpin
 ```bash
 sudo docker images
 ```
-Посмотреть, какие контейнеры, сейчас запущены:
+Посмотреть, какие контейнеры сейчас запущены:
 ```bash
 sudo docker ps
 ```
